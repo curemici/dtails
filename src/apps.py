@@ -72,7 +72,7 @@ def bip39_iancoleman():
     if os.path.exists("shared_with_chroot/"+ file):
         install_bip39_iancoleman()
     else:
-        subprocess.run("wget https://github.com/iancoleman/bip39/releases/download/0.5.4/bip39-standalone.html -P shared_with_chroot", shell=True)
+        subprocess.run("wget https://github.com/iancoleman/bip39/releases/download/0.5.6/bip39-standalone.html -P shared_with_chroot", shell=True)
         install_bip39_iancoleman()
 
 def seedtool():
@@ -80,7 +80,7 @@ def seedtool():
     if os.path.exists("shared_with_chroot/"+ file):
         install_seedtool()
     else:
-        subprocess.run("wget -O shared_with_chroot/seedtool.html https://github.com/BitcoinQnA/seedtool/releases/download/2.0.2/index.html", shell=True)
+        subprocess.run("wget -O shared_with_chroot/seedtool.html https://github.com/BitcoinQnA/seedtool/releases/download/2.2.0/index.html", shell=True)
         install_seedtool()
 
 def border_wallets():
